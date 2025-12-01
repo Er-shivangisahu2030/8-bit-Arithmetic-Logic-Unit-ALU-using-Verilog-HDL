@@ -1,0 +1,156 @@
+$date
+	Mon Jun 09 09:14:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module alu_tb $end
+$var wire 8 ! Remainder [7:0] $end
+$var wire 8 " Quotient [7:0] $end
+$var wire 1 # DivideByZero $end
+$var wire 1 $ CarryOut $end
+$var wire 16 % ALU_Result [15:0] $end
+$var reg 8 & A [7:0] $end
+$var reg 4 ' ALU_Sel [3:0] $end
+$var reg 8 ( B [7:0] $end
+$scope module uut $end
+$var wire 8 ) A [7:0] $end
+$var wire 4 * ALU_Sel [3:0] $end
+$var wire 8 + B [7:0] $end
+$var wire 9 , tmp [8:0] $end
+$var wire 1 $ CarryOut $end
+$var reg 16 - ALU_Result [15:0] $end
+$var reg 1 # DivideByZero $end
+$var reg 8 . Quotient [7:0] $end
+$var reg 8 / Remainder [7:0] $end
+$upscope $end
+$scope task display_output $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 /
+b0 .
+b100011 -
+b100011 ,
+b1111 +
+b0 *
+b10100 )
+b1111 (
+b0 '
+b10100 &
+b100011 %
+0$
+0#
+b0 "
+b0 !
+$end
+#10000
+b10100 %
+b10100 -
+b1 '
+b1 *
+b1010 (
+b1010 +
+b101000 ,
+b11110 &
+b11110 )
+#20000
+b101010 %
+b101010 -
+b10 '
+b10 *
+b110 (
+b110 +
+b1101 ,
+b111 &
+b111 )
+#30000
+b1000 %
+b1000 -
+b1000 "
+b1000 .
+b11 '
+b11 *
+b101 (
+b101 +
+b101101 ,
+b101000 &
+b101000 )
+#40000
+b1101111010101101 %
+b1101111010101101 -
+b11111111 !
+b11111111 /
+1#
+b11111111 "
+b11111111 .
+b101000 ,
+b0 (
+b0 +
+#50000
+b11110 %
+b11110 -
+0#
+b0 !
+b0 /
+b0 "
+b0 .
+b100 '
+b100 *
+b1111 ,
+b1111 &
+b1111 )
+#60000
+b111 %
+b111 -
+b101 '
+b101 *
+#70000
+1$
+b10001000 %
+b10001000 -
+b1000 '
+b1000 *
+b11001100 (
+b11001100 +
+b101110110 ,
+b10101010 &
+b10101010 )
+#80000
+b11101110 %
+b11101110 -
+b1001 '
+b1001 *
+#90000
+b1100110 %
+b1100110 -
+b1010 '
+b1010 *
+#100000
+b1 %
+b1 -
+0$
+b1111 '
+b1111 *
+b11001 (
+b11001 +
+b110010 ,
+b11001 &
+b11001 )
+#110000
+b1110 '
+b1110 *
+b10100 (
+b10100 +
+b1000110 ,
+b110010 &
+b110010 )
+#120000

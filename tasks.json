@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run ALU Testbench",
+            "type": "shell",
+            "command": "iverilog",
+            "args": [
+                "-o", "alu_tb.vvp",
+                "alu.v",
+                "alu_tb.v"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Simulate ALU Testbench",
+            "type": "shell",
+            "command": "vvp",
+            "args": [
+                "alu_tb.vvp"
+            ],
+            "dependsOn": ["Run ALU Testbench"],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Open GTKWave",
+            "type": "shell",
+            "command": "gtkwave",
+            "args": [
+                "alu_tb.vcd"
+            ],
+            "dependsOn": ["Simulate ALU Testbench"],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
